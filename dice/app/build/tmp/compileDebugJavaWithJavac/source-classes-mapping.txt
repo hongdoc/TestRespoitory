@@ -1,0 +1,6 @@
+com/hongdoc/dice/BuildConfig.java
+ com.hongdoc.dice.BuildConfig
+com/hongdoc/dice/DataBindingTriggerClass.java
+ com.hongdoc.dice.DataBindingTriggerClass
+com/hongdoc/dice/databinding/ActivityMainBinding.java
+ com.hongdoc.dice.databinding.ActivityMainBinding
