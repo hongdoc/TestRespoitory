@@ -48,17 +48,17 @@ class MainActivity : AppCompatActivity() {
             }
 
             if (number2 == 1) {
-                diceImage1.setImageResource(R.drawable.dice_1)
+                diceImage2.setImageResource(R.drawable.dice_1)
             } else if(number2 == 2){
-                diceImage1.setImageResource(R.drawable.dice_2)
+                diceImage2.setImageResource(R.drawable.dice_2)
             } else if(number2 == 3){
-                diceImage1.setImageResource(R.drawable.dice_3)
+                diceImage2.setImageResource(R.drawable.dice_3)
             } else if(number2 == 4){
-                diceImage1.setImageResource(R.drawable.dice_4)
+                diceImage2.setImageResource(R.drawable.dice_4)
             } else if(number2 == 5){
-                diceImage1.setImageResource(R.drawable.dice_5)
+                diceImage2.setImageResource(R.drawable.dice_5)
             } else {
-                diceImage1.setImageResource(R.drawable.dice_6)
+                diceImage2.setImageResource(R.drawable.dice_6)
             }
 
         }
