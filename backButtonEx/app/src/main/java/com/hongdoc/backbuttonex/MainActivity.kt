@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         isDouble = true
-        Toast.makeText(this, "종료하시려면 더블클릭을 누르세요", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "종료하시려면 더블클릭을 누르세요.", Toast.LENGTH_LONG).show()
 
 
         Handler().postDelayed(  {
