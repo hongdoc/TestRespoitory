@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "190195280646",
+    "project_id": "fb-login-test-9d71d",
+    "storage_bucket": "fb-login-test-9d71d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190195280646:android:38175fc7bb045111f54c87",
+        "android_client_info": {
+          "package_name": "com.hongdoc.fb_login_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190195280646-iedd14bveq7kkesni6gptoc2osuhglti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoexxZ8EWFhEnvYMLo0i7vukoph1Eb_hc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190195280646-iedd14bveq7kkesni6gptoc2osuhglti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
