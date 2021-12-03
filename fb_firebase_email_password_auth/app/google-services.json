@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "602005412751",
+    "project_id": "fir-email-password-auth-4d2b1",
+    "storage_bucket": "fir-email-password-auth-4d2b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602005412751:android:55321e92a19d8d381d09fa",
+        "android_client_info": {
+          "package_name": "com.hongdoc.fb_firebase_email_password_auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602005412751-8b8iki202hajn8mjdnmp0fm2r51cme3c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1lxiDtO6bq8z5SuovS3ltmZ_frFIthUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602005412751-8b8iki202hajn8mjdnmp0fm2r51cme3c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
