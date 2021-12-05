@@ -27,4 +27,13 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"/>
 
+    <Button
+        android:id="@+id/SaveBtn"
+        android:text="저장하기"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
 </LinearLayout>
