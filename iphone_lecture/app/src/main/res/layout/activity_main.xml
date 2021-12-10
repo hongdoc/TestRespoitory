@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/iphone_image_1"
+            android:layout_margin="8dp"
+            android:src="@drawable/iphone1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:id="@+id/iphone_image_2"
+            android:layout_margin="8dp"
+            android:src="@drawable/iphone2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:id="@+id/iphone_image_3"
+            android:layout_margin="8dp"
+            android:src="@drawable/iphone3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/iphone_image_4"
+            android:layout_margin="8dp"
+            android:src="@drawable/iphone4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:id="@+id/iphone_image_5"
+            android:layout_margin="8dp"
+            android:src="@drawable/iphone5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:id="@+id/iphone_image_6"
+            android:layout_margin="8dp"
+            android:src="@drawable/iphone6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <ImageView
+            android:id="@+id/iphone_image_7"
+            android:layout_margin="8dp"
+            android:src="@drawable/iphone7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:id="@+id/iphone_image_8"
+            android:layout_margin="8dp"
+            android:src="@drawable/iphone8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:id="@+id/iphone_image_9"
+            android:layout_margin="8dp"
+            android:src="@drawable/iphonex"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <ImageView
+            android:id="@+id/iphone_image_10"
+            android:layout_margin="8dp"
+            android:src="@drawable/iphone11"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:id="@+id/iphone_image_11"
+            android:layout_margin="8dp"
+            android:src="@drawable/iphonexs"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:id="@+id/iphone_image_12"
+            android:layout_margin="8dp"
+            android:src="@drawable/iphone12"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/iphone_image_13"
+            android:layout_margin="8dp"
+            android:src="@drawable/iphone13"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
