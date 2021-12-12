@@ -108,7 +108,7 @@ import androidx.recyclerview.widget.RecyclerView
 
         rvAdapter.itemClick = object : RVAdapter.ItemClick{
             override fun onClick(view: View, position: Int){
-
+                //ViewActivity로 화면전환 및 스크랩 목록 -> url title, imageUrl을 DB에 저장
                 val intent = Intent(baseContext, ViewActivity::class.java)
                 intent.putExtra("url",items[position].url)
                 intent.putExtra("title",items[position].titleText)
@@ -117,7 +117,7 @@ import androidx.recyclerview.widget.RecyclerView
 
             }
         }
-
+        //
         recyclerview.layoutManager = GridLayoutManager(this, 2)
 
     }
