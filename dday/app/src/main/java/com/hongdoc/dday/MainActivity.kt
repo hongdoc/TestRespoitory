@@ -4,9 +4,12 @@ import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.util.TimeUtils
 import android.widget.Button
 import android.widget.DatePicker
+import android.widget.TextView
 import java.util.*
+import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +24,9 @@ class MainActivity : AppCompatActivity() {
         var startDate=""
         var endDate=""
 
+        val calendar_start = Calendar.getInstance()
+        val calendar_end = Calendar.getInstance()
+
         startButton.setOnClickListener{
 
             val today = GregorianCalendar()
@@ -34,8 +40,12 @@ class MainActivity : AppCompatActivity() {
                       //12
                       //15
                       //startDate = "{$year} + {$month} + {$dayOfMonth}"
-                      endDate = year.toString() + month+1.toString() + dayOfMonth.toString()
-                      Log.d("day : ",endDate)
+                      startDate = year.toString() + month+1.toString() + dayOfMonth.toString()
+
+                      calendar_start.set(year, month+1, dayOfMonth)
+
+                      Log.d("day : ",startDate)
+
 
                   }
             },year, month, day)
@@ -44,6 +54,33 @@ class MainActivity : AppCompatActivity() {
         }
 
         endButton.setOnClickListener{
+
+            val today = GregorianCalendar()
+            val year = today.get(Calendar.YEAR)
+            val month = today.get(Calendar.MONTH)
+            val day = today.get(Calendar.DATE)
+
+            val dlg = DatePickerDialog(this, object : DatePickerDialog.OnDateSetListener{
+                override fun onDateSet(view: DatePicker?, year: Int, month : Int, dayOfMonth : Int) {
+                    //20211215
+                    //12
+                    //15
+                    //startDate = "{$year} + {$month} + {$dayOfMonth}"
+                    endDate = year.toString() + month+1.toString() + dayOfMonth.toString()
+
+                    calendar_end.set(year, month+1, dayOfMonth)
+
+                    val finalDate = TimeUnit.MILLISECONDS.toDays(calendar_end.timeInMillis - calendar_start.timeInMillis)
+
+                    Log.d("day : ",endDate)
+
+                    val textArea = findViewById<TextView>(R.id.finalDate)
+
+                    textArea.setText(finalDate.toString())
+
+                }
+            },year, month, day)
+            dlg.show()
 
 
 
