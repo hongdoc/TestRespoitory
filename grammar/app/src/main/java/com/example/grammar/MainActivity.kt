@@ -363,4 +363,48 @@ fun remainder(num1 : Int, num2 : Int){
     }
     println(count)
 
-    */
+   //엘비스 연산자(Elvis Operator)
+    //null 처리를 위해
+    //null -> 아무것도 없는것
+    //var str = "" val number = 0 X
+    //null이라는것은 아무것도 없는것
+    //
+    /*
+    var testStr1 : String = ""
+    println(testStr1)
+
+    var testStr2 = null
+    println(testStr2)
+
+    var testStr3 : String = "abcd"
+    println(testStr3)
+
+    //null은 문자열이 아니므로 에러가 난다.
+    //?을 붙여서 Null일 수도 있다는것을 알려준다.
+    var testStr4 : String?= null
+
+
+    // 문자열을 길이를 찾아주는 function이다 문자열을 받아서 Int타입을 리턴해준다.
+
+    println(findStringLength4(null))
+    }
+
+//     fun findStringLength1(str : String) : Int {
+
+//         return str.length
+
+//         fun findStringLength2(str : String?) : Int?{
+//             return str?.length
+//         }
+//만약에 str이 null이 아니면 resultCount의 값을 str.length에 넣고 return 으로 resultCount를 리턴해준다.
+// 	fun findStringLength3(str : String?) : Int {
+//         var resultCount = 0
+//         if(str != null) {
+//             resultCount = str.length
+//         }
+//         return resultCount
+//     }
+// 만약에 str?.lenght가 null이면 0을 리턴해주고 아니면 이 문자열의 길이를 리턴해줘라
+	fun findStringLength4(str : String?) : Int {
+        return str?.length ?: 0
+        */
