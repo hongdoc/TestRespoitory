@@ -256,3 +256,111 @@ println("A")
 println("B")
 println("C")
 */
+
+/*
+    sumTwo(10,4)
+    sumThree(10,2,8)
+    minus(18,1)
+    division(10,5)
+    remainder(14,5)
+
+}
+
+fun sumTwo(num1 : Int, num2 : Int){
+    println(num1 + num2)
+}
+
+fun sumThree(num1 : Int, num2 : Int, num3 : Int){
+    println(num1 + num2 + num3)
+}
+
+//숫자 두개를 빼주고
+fun minus(num1 : Int, num2 : Int){
+    println(num1 - num2)
+
+}
+
+// 숫자 두개를 나눠주고
+fun division(num1 : Int, num2 : Int){
+    println(num1 / num2)
+
+}
+// 숫자 두개를 나누고 나머지
+fun remainder(num1 : Int, num2 : Int){
+    println(num1 % num2)
+
+
+
+    //논리 연산
+    //and or
+
+    val a = "남자"
+    val b = 20
+
+    //and
+    if(a == "남자" && b >= 20){
+        println("and 만족")
+    }
+
+
+
+
+
+    //문자열 가공
+    //유저가 입력한 데이터를 가공하거나
+    //서버에서 가져온 데이터를 알맞게 가공해서 쓰거나
+
+    //0번째 부터 시작해서 2번째까지 데이터를 가져온다
+//     val testString = "동해물과 백두산이 마르고 닳도록"
+//     //문자열 일부분만 바꾸고 싶다 할 때 replaceValue 사용
+//     val replaceValue = testString.replace("백두산","한라산")
+//     println(replaceValue)
+    //마지막 끝자리를 빼고 가져오고 싶을 때
+//     val splitString = testString.substring(0, testString.length-1)
+//     println(splitString)
+//	스페이스바를 기준으로 자르려고한다. split사용
+//    val newTestString = testString.split(" ")
+//     println(newTestString)
+//     println(newTestString[0])
+//     println(newTestString[1])
+//
+// 	val a = testString[1]
+//     val b = testString[2]
+// 	println(a.toString() + b.toString())
+//
+	val testList = ArrayList<String>()
+    testList.add("ABC1@naver.com")
+    testList.add("ABC2@google.com")
+    testList.add("ABC3@daum.com")
+    testList.add("ABC4@kakao.com")
+    testList.add("ABC5@naver.com")
+    testList.add("ABC6@kakao.com")
+    testList.add("ABC7@naver.com")
+
+    //저는 저기 이메일에 @ 다음에 naver라고 적힌 이메일의 갯수를 찾는다.
+    //2가지방법
+    //1. naver라는 텍스트가 포함되어있는지
+    // -> 첫번쨰 방법 문제는 naver@google.com일 때 가져온다
+    //2. @뒤에 naver라고 텍스트가 있고 그 다음에 .이 이어진 이메일이 몇개인지 찾기
+    //******@naver.
+
+    val emailList = ArrayList<String>()
+
+    for (item in testList) {
+        //split로 @까지 자르고 list에 1번째 값만 가져오고 또 .기준으로 자른 후 0번째 값을 가져온다.
+        println(item.split("@")[1].split(".")[0])
+        emailList.add(item.split("@")[1].split(".")[0])
+    }
+    println(emailList)
+
+    var count = 0
+
+    for (item in emailList){
+        if(item == "naver"){
+        count++
+        }
+
+    }
+    println(count)
+
+    */
