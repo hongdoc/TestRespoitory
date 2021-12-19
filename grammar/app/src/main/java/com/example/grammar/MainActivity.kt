@@ -383,6 +383,25 @@ fun remainder(num1 : Int, num2 : Int){
     //?을 붙여서 Null일 수도 있다는것을 알려준다.
     var testStr4 : String?= null
 
+    var testStr2 : String = ""
+    println(testStr2)
+
+    var testStr3 = null
+    println(testStr3)
+
+    var testStr4 : String = "abcd"
+    println(testStr4)
+ */
+ */
+ */
+
+
+/*
+ddd
+
+ */
+
+
 
     // 문자열을 길이를 찾아주는 function이다 문자열을 받아서 Int타입을 리턴해준다.
 
