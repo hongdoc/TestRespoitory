@@ -449,7 +449,7 @@ ddd
     str2 = 123
     println(str2)
     */
-
+/*
     var str3 : Any = "abc"
 
     if(str3 is String){
