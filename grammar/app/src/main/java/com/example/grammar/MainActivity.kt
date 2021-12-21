@@ -489,5 +489,35 @@ ddd
     println(str9)
 }
 */
+/*
+ // list 가공하기
+   val testList1 = mutableListOf<Int>()
+   testList1.add(1)
+   testList1.add(2)
+   testList1.add(3)
+   testList1.add(4)
+   testList1.add(10)
+   testList1.add(15)
+   testList1.add(15)
+   testList1.add(10)
 
+   //distinct 중복제거
+   println(testList1.distinct())]
+   //maxOrNull 제일 큰 값
+   println(testList1.maxOrNull())
+   //minOrNull 제일 작은 값
+   println(testList1.minOrNull())
+   //avarage 평균값
+   println(testList1.avarage())
+
+
+    //j로 이름이 시작하는 사람 출력하기
+    val testList2 = listOf("john", "jay", "minsu", "hong", "doc")
+
+    val result1 = testList2.filter {
+        it.startsWith("j")
+    }
+    println(result1)
+    */
+    
 
