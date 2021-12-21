@@ -399,7 +399,7 @@ fun remainder(num1 : Int, num2 : Int){
 /*
 ddd
 
- */
+
 
 
 
@@ -459,3 +459,35 @@ ddd
     }
 
    */
+
+
+        /*
+
+
+
+    var str4 : Any = 132
+
+    when(str4) {
+        is Int -> { println ("this is int")}
+        is String -> { println("this is string")}
+    	else -> {
+            println("this is else")
+        }
+    }
+
+
+
+//     var str5 : String = "abc"
+//     var str6 : String = str5 as String
+
+//     println(str6)
+
+//     var str7 : Int = 1
+//     var str8 : String = str7 as String
+
+    var str9 : String? = "abc" as? String
+    println(str9)
+}
+*/
+
+
