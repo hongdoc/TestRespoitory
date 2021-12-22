@@ -538,3 +538,68 @@ ddd
         println(result3[true])
 */
 
+
+/*
+// class -> 설계 + 기능
+// function -> 기능
+//println(test().a)
+//Test3().test3Fun()
+//     val myinfo = MyInfo()
+//     println(myinfo.getMyAge())
+//     println(myinfo.getMyName())
+//     println(myinfo.getMyLocation())
+// 	val dog = Dog("파트라슈", 20)
+//     println(dog.getMyDogInfo())
+//	initTest().testInitFun()
+InitialValue("Hongdoc",30)
+   InitialValue("박보검")
+
+}
+class InitialValue(name : String, age : Int = 26){
+init {
+    println(name)
+    println(age)
+}
+}
+
+class initTest(){
+init {
+    println("여기에 뜸")
+}
+fun testInitFun(){
+    println("testInitFun")
+}
+}
+
+class Dog(name : String, age : Int){
+val dogName = name
+val dogAge = age
+
+fun getMyDogInfo() : String {
+    return "$dogName : $dogAge"
+}
+}
+
+class test(){
+val a = 123
+
+}
+
+class Test3(){
+fun test3Fun(){
+    println("test3Fun 출력")
+}
+}
+
+class MyInfo(){
+fun getMyAge() : Int {
+    return 26
+}
+fun getMyName() : String{
+    return "Hongdoc"
+}
+fun getMyLocation() : String{
+    return "Incheon"
+}
+*/
+
