@@ -92,3 +92,34 @@ class Job1(){
     }
 }
     */
+/*
+//상속(inheritance)과 오버라이딩(overriding)
+//
+//상속
+//자식 클래스가 부모 클래스의 멤버를 물려받는것
+//
+//오버라이딩
+//부모클래스의 메소드를 자식클래스에서 재정의해서 사용하느것
+//Parents().disease()
+//
+Child().doing()
+Child().disease()
+}
+//상속을 하려면 open을 붙여준다.
+//
+open class Parents(){
+    fun doing(){
+        println("자식을 돌본다")
+    }
+
+    open fun disease(){
+        println("비염이있다.")
+    }
+}
+
+class Child() : Parents(){
+    override fun disease(){
+        super.disease()
+    }
+}
+/*
