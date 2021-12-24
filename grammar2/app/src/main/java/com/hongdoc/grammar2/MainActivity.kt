@@ -122,4 +122,60 @@ class Child() : Parents(){
         super.disease()
     }
 }
+*/
+
+
+
 /*
+fun main(){
+	//추상클래스(absctract class)
+	//
+	//class -> 붕어빵 틀
+	//abstract class -> 기존에는 비어있고 꽉 채워야 하는 붕어빵 만들어야 하는 틀
+
+    //Bike().wheel()
+    //Bike().engine()
+
+    RENAULT().wheel()
+    RENAULT().engine()
+}
+
+abstract class Car {
+
+    abstract fun wheel()
+
+    abstract fun engine()
+
+}
+
+class RENAULT() : Car(){
+
+    override fun wheel(){
+        println("RENAULT 굴러갑니다.")
+    }
+    override fun engine(){
+		println("RENAULT 시동겁니다.")
+    }
+}
+
+
+*/
+
+/*
+open class Car {
+    open fun wheel(){
+        println("굴러간다")
+    }
+
+    open fun engine(){
+        println("시동이 켜졌다")
+    }
+}
+
+class Bike() : Car(){
+
+    override fun wheel(){
+        println("자전거가 굴러갑니다.")
+    }
+}
+*/
