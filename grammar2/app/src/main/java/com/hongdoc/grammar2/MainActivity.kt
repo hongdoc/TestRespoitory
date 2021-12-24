@@ -179,3 +179,81 @@ class Bike() : Car(){
     }
 }
 */
+
+/*
+fun main(){
+    //인터페이스(interface)
+    //추상클래스랑 비슷하다
+    //모두 채워넣어야 하는 붕어빵틀인데
+    //자체가 작은 틀이라서 다른 틀에 여러개 넣을 수 있음
+    //
+
+
+
+    //Benz().wheel()
+    //Benz().engine()
+
+    BMW().autoDriving()
+    Benz().autoParking()
+
+}
+
+abstract class Car {
+    abstract fun wheel()
+    abstract fun engine()
+}
+
+interface CarAutoDriving{
+    fun autoDriving()
+}
+
+interface CarAutoParking{
+    fun autoParking()
+}
+
+class BMW() : Car(), CarAutoDriving{
+    override fun wheel(){
+	    println("BMW 굴러감")
+    }
+    override fun engine(){
+        println("BMW 엔진시동")
+    }
+
+    override fun autoDriving(){
+        println("BMW 자율주행")
+    }
+}
+class Benz() : Car(), CarAutoParking {
+    override fun wheel(){
+	    println("Benz 굴러감")
+    }
+    override fun engine(){
+        println("Benz 엔진시동")
+    }
+
+    override fun autoParking(){
+        println("Benz 자동 주차")
+    }
+}
+
+
+*/
+
+/*
+interface Car {
+
+    fun wheel()
+    fun engine()
+
+}
+
+class Benz() : Car {
+    override fun wheel(){
+        println("wheel 돌아감")
+    }
+    override fun engine(){
+        println("engine 돌아감")
+
+    }
+}
+*/
