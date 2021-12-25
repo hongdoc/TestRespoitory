@@ -167,7 +167,7 @@ open class Car {
         println("굴러간다")
     }
 
-    open fun engine(){
+    open fun engine(){//
         println("시동이 켜졌다")
     }
 }
