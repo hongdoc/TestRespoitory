@@ -92,168 +92,31 @@ class Job1(){
     }
 }
     */
-/*
-//상속(inheritance)과 오버라이딩(overriding)
-//
-//상속
-//자식 클래스가 부모 클래스의 멤버를 물려받는것
-//
-//오버라이딩
-//부모클래스의 메소드를 자식클래스에서 재정의해서 사용하느것
-//Parents().disease()
-//
-Child().doing()
-Child().disease()
-}
-//상속을 하려면 open을 붙여준다.
-//
-open class Parents(){
-    fun doing(){
-        println("자식을 돌본다")
-    }
-
-    open fun disease(){
-        println("비염이있다.")
-    }
-}
-
-class Child() : Parents(){
-    override fun disease(){
-        super.disease()
-    }
-}
-*/
-
 
 
 /*
-fun main(){
-	//추상클래스(absctract class)
-	//
-	//class -> 붕어빵 틀
-	//abstract class -> 기존에는 비어있고 꽉 채워야 하는 붕어빵 만들어야 하는 틀
+    //Data class
+    //이름처럼 데이터를 넣어놓는 클래스
 
-    //Bike().wheel()
-    //Bike().engine()
+    val justDog = JustDog("파트라슈", 21)
+    println(justDog.name)
+    println(justDog.age)
+    println(justDog.toString())
 
-    RENAULT().wheel()
-    RENAULT().engine()
+    val dataDog = DataDog("파트라슈 친구", 15)
+    println(dataDog.name)
+    println(dataDog.age)
+    println(dataDog.toString())
+
+    val dataDog2 = dataDog.copy(name = "파트라슈 여자친구")
+    println(dataDog2.toString())
 }
 
-abstract class Car {
-
-    abstract fun wheel()
-
-    abstract fun engine()
-
-}
-
-class RENAULT() : Car(){
-
-    override fun wheel(){
-        println("RENAULT 굴러갑니다.")
-    }
-    override fun engine(){
-		println("RENAULT 시동겁니다.")
-    }
-}
-
-
-*/
-
-/*
-open class Car {
-    open fun wheel(){
-        println("굴러간다")
-    }
-
-    open fun engine(){//
-        println("시동이 켜졌다")
-    }
-}
-
-class Bike() : Car(){
-
-    override fun wheel(){
-        println("자전거가 굴러갑니다.")
-    }
-}
-*/
-
-/*
-fun main(){
-    //인터페이스(interface)
-    //추상클래스랑 비슷하다
-    //모두 채워넣어야 하는 붕어빵틀인데
-    //자체가 작은 틀이라서 다른 틀에 여러개 넣을 수 있음
-    //
-
-
-
-    //Benz().wheel()
-    //Benz().engine()
-
-    BMW().autoDriving()
-    Benz().autoParking()
+class JustDog(var name : String, var age : Int){
 
 }
 
-abstract class Car {
-    abstract fun wheel()
-    abstract fun engine()
-}
+data class DataDog(var name : String, var age : Int)[
 
-interface CarAutoDriving{
-    fun autoDriving()
-}
-
-interface CarAutoParking{
-    fun autoParking()
-}
-
-class BMW() : Car(), CarAutoDriving{
-    override fun wheel(){
-	    println("BMW 굴러감")
-    }
-    override fun engine(){
-        println("BMW 엔진시동")
-    }
-
-    override fun autoDriving(){
-        println("BMW 자율주행")
-    }
-}
-class Benz() : Car(), CarAutoParking {
-    override fun wheel(){
-	    println("Benz 굴러감")
-    }
-    override fun engine(){
-        println("Benz 엔진시동")
-    }
-
-    override fun autoParking(){
-        println("Benz 자동 주차")
-    }
-}
-
-
-*/
-
-/*
-interface Car {
-
-    fun wheel()
-    fun engine()
-
-}
-
-class Benz() : Car {
-    override fun wheel(){
-        println("wheel 돌아감")
-    }
-    override fun engine(){
-        println("engine 돌아감")
-
-    }
-}
+]
 */
