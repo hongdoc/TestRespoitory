@@ -163,3 +163,34 @@ class Test2 {
 }
 
 */
+
+
+//람다(Lambda) 함수
+//람다란?
+/*
+    println(sum(1,2))
+    println(sumNumber(1,2))
+    println(sumTypeNumber(1,2))
+    println(sumTypeNumberNull(1,2))
+
+    println(sumString("1","2"))
+    println(sumStringTwo("1","2"))
+    println(sumStringTypeTwo("1","2"))
+}
+//기존 방식
+fun sumString(a : String, b : String) : String {
+    return "string1 : $a String2 : $b"
+}
+//람다식
+val sumStringTwo = {a : String, b : String -> "string1 : $a string2 : $b"}
+val sumStringTypeTwo : (String, String) -> String = {a,b -> "string1 : $a string2 : $b"}
+//기존 방식
+fun sum(a : Int, b : Int) : Int{
+    return a+b
+}
+
+//람다식
+val sumNumber = {a : Int, b : Int -> a + b}
+val sumTypeNumber : (Int, Int) -> Int = {a, b -> a+b}
+val sumTypeNumberNull : (Int, Int) -> Int? = {_, _ -> null}
+*/
