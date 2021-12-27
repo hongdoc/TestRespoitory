@@ -1,5 +1,6 @@
 package com.hongdoc.mysampleapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -65,6 +66,10 @@ class MainActivity : AppCompatActivity() {
                     if (task.isSuccessful) {
                         Toast.makeText(this, "ok", Toast.LENGTH_LONG).show()
                         Toast.makeText(this, auth.currentUser?.uid.toString(), Toast.LENGTH_LONG).show()
+
+                        val intent = Intent(this, BoardListActivity::class.java)
+                        startActivity(intent)
+
                     } else {
                         Toast.makeText(this, "no", Toast.LENGTH_LONG).show()
                     }
