@@ -194,3 +194,49 @@ val sumNumber = {a : Int, b : Int -> a + b}
 val sumTypeNumber : (Int, Int) -> Int = {a, b -> a+b}
 val sumTypeNumberNull : (Int, Int) -> Int? = {_, _ -> null}
 */
+
+
+/*
+fun main() {
+
+    //고차함수(High-Order-Function)
+    //f(x) = x -> f(f(x)) = x
+
+   //println(testSum1(1,2))
+   //println(testLambdaSum(1,2))
+   sum(1,2, { a : Int, b : Int -> a + b})
+   sum(1,2) { a : Int, b : Int -> a + b}
+   sum(1,2, ::testSum)
+   printTest("abc")
+   highPrintTest(::printTest)
+   test1()
+}
+//기본
+fun testSum1(a : Int , b : Int) : Int {
+    return a+b
+}
+//람다함수
+val testLambdaSum = {a : Int, b : Int -> a+b}
+
+//고차함수
+fun sum(a : Int, b : Int, operation : (Int, Int) -> Int) {
+    println("$a $b")
+    println(operation(a,b))
+}
+
+fun testSum(a : Int, b : Int) : Int {
+    return a+b
+}
+//기본
+fun printTest(str : String){
+    println(str)
+}
+//고차 Unit= 아무것도 return하지 않는다는 뜻
+fun highPrintTest(operation : (String) -> Unit){
+    operation("bbb")
+}
+
+fun test1() : Unit{
+    println("abc")
+}
+*/
