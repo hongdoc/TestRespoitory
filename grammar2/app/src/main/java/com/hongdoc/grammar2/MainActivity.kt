@@ -355,3 +355,81 @@ class TestClass{
    var count = 0
 }
 */
+
+//지연초기화
+//lateinit / lazy
+/*
+
+var justString : String = "아무거나 스트링"
+
+println(justString)
+
+justString = "변경된 스트링"
+
+println(justString)
+
+
+
+lateinit var lateString : String
+
+//변경이 가능한 타입
+//lateString = "a"
+//lateString = "b"
+
+//만약 서버에서 데이터를 받아오는 일이 생길 수도 있다
+//서버에서 받아온 데이터를 넣어두고 싶은데 미리 변수를 선언해놓고
+//나중에 서버에서 값을 받아와서 넣어줄 때 주로 사용한다.
+
+//lateString = "변경된 스트링"
+
+   //println(lateString)
+
+val lazyString : String by lazy{
+    println("이 친구가 만들어 질 때 프린트")
+    "lazyTestString"
+}
+lazyString
+//println(lazyString)
+
+
+
+
+
+//infix function
+println(sum(1,2))
+println(10 sum1 20)
+println(20 sum2 30)
+println(10 multi1 10)
+println(10 sum3 20)
+println("apple" sum1 "포도")
+println("사과" sum2 "포도")
+}
+infix fun Int.showList(num:Int) : List<Int> {
+
+val list = mutableListOf<Int>()
+for (i in this..num){
+    list.add(i)
+}
+println(this)
+return list
+}
+
+infix fun String.sum1(abc : String) : String = this + abc
+infix fun String.sum2(abc : String) : String {
+return this + abc
+}
+
+infix fun Int.sum1(num : Int) : Int = this + num
+infix fun Int.sum2(num : Int) : Int = this + num
+infix fun Int.multi1(num : Int) : Int = this * num
+
+
+infix fun Int.sum3(num : Int) : Int {
+return this + num
+}
+
+fun sum(a : Int, b : Int) : Int {
+return a + b
+}
+/*
+
