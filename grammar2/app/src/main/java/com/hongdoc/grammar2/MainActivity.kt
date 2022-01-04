@@ -433,3 +433,44 @@ return a + b
 }
 */
 
+/*
+////kotlin scope function
+    //let / with / run /apply /also
+    //
+    //let
+    //non null 일 때 동작하고, null일 때 동작하지 않도록 한다.
+    //
+    //with
+    //컨텍스트 내부에서 함수를 호출
+    //
+    //run
+    //객체 초기화와 return값 계산이 필요할 때 주로 사용
+    //
+    //apply
+    //값을 반환하지 않고, 객체 구성에 대해 주로 사용
+    //
+    //also
+    //객체에 대해 추가적인 작업
+
+fun main() {
+
+    val str : String? = "HI"
+
+    //println(str?.length)
+    val length = str?.let {
+        println(it)
+        it.length
+    }
+    println(length)
+    //null 일때 실행되지 않음
+    val str2 : String? = null
+    val length2 = str2?.let{
+        println(it)
+        println("실행")
+        it.length
+    }
+    println(length2)
+
+}
+*/
+
