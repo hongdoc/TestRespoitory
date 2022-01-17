@@ -28,7 +28,8 @@ layout_below : 지정된 view 하단에 배치
 layout_toRightOf : 지정된 view 우측에 배치
 layout_toLeftOf : 지정된 view 좌측에 배치
 
-RelativeLayout은 Parent 나 다른 View 와의 관계를 설정하여 배치한다.
+RelativeLayout은 Parent 나 다른 View 와의 관계를 설정하여 배치한다..sdasd
+dsadsadsad
  */
 
 
