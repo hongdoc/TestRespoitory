@@ -22,12 +22,25 @@ ListView
 RecyclerView가 내부적으로 관리의 효율성을 가지고 있지만 지금도 ListView를 많이 사용하고 있다.
 RecyclerView를 사용할 정도가 아니라면 ListView를 사용해도 된다.
 
+adapter : AdapterView를 구성하기 위해 사용하는 adapter를 관리한다.
+
  */
 
 class MainActivity : AppCompatActivity() {
 
+    val data1 = arrayOf(
+        "문자열1","문자열2","문자열3","문자열4","문자열5",
+        "문자열6","문자열7","문자열8","문자열9","문자열10",
+        "문자열11","문자열12","문자열13","문자열14","문자열15",
+        "문자열16","문자열17","문자열18","문자열19","문자열20",
+        "문자열21","문자열22","문자열23","문자열24","문자열25"
+    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
     }
+
 }
