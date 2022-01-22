@@ -23,7 +23,7 @@ RecyclerView가 내부적으로 관리의 효율성을 가지고 있지만 지�
 RecyclerView를 사용할 정도가 아니라면 ListView를 사용해도 된다.
 
 adapter : AdapterView를 구성하기 위해 사용하는 adapter를 관리한다.
-
+..20220122
  */
 
 class MainActivity : AppCompatActivity() {
