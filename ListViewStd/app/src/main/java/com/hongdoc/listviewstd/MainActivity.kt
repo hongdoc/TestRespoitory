@@ -2,6 +2,10 @@ package com.hongdoc.listviewstd
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import kotlinx.android.synthetic.main.activity_main.*
 
 /*
 Adapter View
@@ -23,7 +27,15 @@ RecyclerView가 내부적으로 관리의 효율성을 가지고 있지만 지�
 RecyclerView를 사용할 정도가 아니라면 ListView를 사용해도 된다.
 
 adapter : AdapterView를 구성하기 위해 사용하는 adapter를 관리한다.
-..20220122
+
+itemClick : 항목을 터치하면 발생
+
+정리
+개발자가 View를 구성하기 위해 필요한 데이터를 정해줘야 View 구성이 가능한 View들을 Adapter View라고 부른다.
+View rㅜ성을 위해 필요한 정보를 담는 것을 Adapter Class라고 부른다.
+ListView는 여러 항목을 리스트로 보여줄 수 있는 AdapterView이다.
+
+
  */
 
 class MainActivity : AppCompatActivity() {
@@ -40,6 +52,31 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //첫번째 : Context
+        //두번째 : 항목 하나를 구성하기 위해 사용할 layout 파일
+
+        val adapter1 = ArrayAdapter(this, android.R.layout.simple_list_item_1, data1)
+        list1.adapter = adapter1
+
+        list1.setOnItemClickListener(listener1)
+
+
+        val listener1 = object : AdapterView.OnItemClickListener {
+            // 첫 번째 : 이벤트가 발생한 항목을 가지고 있는 AdapterView
+            // 두 번째 : 이벤트가 발생한 항목 View
+            // 세 번째 : 이벤트가 발생한 항목의 index
+            override fun onItemClick(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
+                when(p0?.id){
+                    R.id.list1 -> {
+                        textView.text = "${data1[p0]} 번째 항목을 클릭했습니다.")
+                    }
+                }
+            }
+
+
+        }
+
+
 
     }
 
