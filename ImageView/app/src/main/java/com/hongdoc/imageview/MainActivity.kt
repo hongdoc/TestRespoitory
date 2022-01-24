@@ -13,7 +13,7 @@ setImageResource : res 폴더에 있는 이미지를 설정한다.
 setImageBitmap : Bitmap 객체로 만들어진 이미지를 설정한다.
 setImageDrawable : Drawable 객체로 만들어진 이미지를 설정한다.
 
-Drawabe
+Setimag
  */
 class MainActivity : AppCompatActivity() {
 
